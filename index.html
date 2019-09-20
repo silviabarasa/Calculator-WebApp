@@ -4,11 +4,10 @@
     <title>Calculator WeBApp</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
   </head>
   <body>
         <div class="container">
-     <div class="row">  
+     <div class="row">
             <div class="col-md-12"> 
             <div class="jumbotron">
         <h1>African Name Generator</h1>
@@ -18,15 +17,35 @@
         <h1>About</h1>
         <div class="card-footer"> 
         <p>Since most people do know when their birthdays are, but some might not know what day of the week they were born. I decided to come up with this app to help them know there are ways to calculate the day of the week from a specific date and get to know which day of the week one was born.What one needs to do is to enter their year of birth, the month in which they were born in numbers, the day of the week they where bon in numbers, click on their gender and click on the search button and the output produced will display their Akan name.</p>
-        <form name="AkanNameForm">
-        <p>Year</p><input type="number" name="year"/>
+        <form onsubmit="check()">
+            <div class="form-group">
+              <label for="date">Date of birth</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            
+          <div class="form-group">
+            <select class="custom-select my-1 mr-sm-2" id="gender">
+              <option selected>Choose gender...</option>
+              <option value="female">female</option>
+              <option value="male">male</option>
+            </select>
+          </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        
+        
+        <!--<form name="AkanNameForm">
+
+            <p>Century</p><input type="number" name="century"/>
+            <p>Year</p><input type="number" name="year"/>
         <p>Month</p><input type="number" name="month"/>
         <p>Day</p><input type="number" name="day"/>
         <p>Gender</p><input type="radio" name="gender"/>Male
         <input type="radio"/>Female
         <button type="button">search</button>
-    </form>
+    </form>-->
       </div>
     </div>
+    <script src="js/scripts.js"></script>
     </body>
 </html>
