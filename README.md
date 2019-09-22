@@ -42,7 +42,7 @@ A web application that takes a ``user's birthday``, calculates the ``day of the 
 * Saturday 13th 2019 returns a value of -0.449 which causes the application to crash
 
 ## License
-> MIT License &copy 2019 Victor 
+> MIT License &copy 2019 silvia 
 
 ## Collaborate
 contact me on 0718963044 or reach me through email: silviabarasa16@gmail.com.
