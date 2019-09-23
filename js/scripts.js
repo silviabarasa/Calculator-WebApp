@@ -1,7 +1,5 @@
 
-    var fName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama" ];
-    var mName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    var dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+   
     //getInput() {
         century = parseInt(document.getElementById("century").value);
         year = parseInt(document.getElrmentaryById("year").value);
@@ -43,10 +41,10 @@
     checkGender();
     console.log("The function runs");//Test CeckDayOfWeek function
     }
-    //arrays
-    let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
-    let maleNames = ["kwasi", "kwadwo", "kwabene", "kwaku", "yaw", "kofi", "kwame"]
-    let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
+      //arrays
+      let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+      let maleNames = ["kwasi", "kwadwo", "kwabene", "kwaku", "yaw", "kofi", "kwame"]
+      let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
 
     //get selected radio button
     function checkGender(){
@@ -81,11 +79,12 @@
     case (6 || -6)
     document.getElementById("result").innerHTML = "the day is on a saturday." + " " + "your akan name is " + maleNames [6];
     break;
+    } 
     defaults:
-    //console.console.log("pass");//Test male case
+    console.log("pass");//Test male case
     
      }
-
+     switch (gender) {
      case gender = "female":
      switch(day){
      case 0 || -0:
