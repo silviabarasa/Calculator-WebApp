@@ -17,18 +17,17 @@
         <h1>About</h1>
         <div class="card-footer"> 
         <p>Since most people do know when their birthdays are, but some might not know what day of the week they were born. I decided to come up with this app to help them know there are ways to calculate the day of the week from a specific date and get to know which day of the week one was born.What one needs to do is to enter their year of birth, the month in which they were born in numbers, the day of the week they where bon in numbers, click on their gender and click on the search button and the output produced will display their Akan name.</p>
-        <form onsubmit="check()">
-        <form name="AkanNameForm">
-        <p>Century</p><input type="number" name="century"/>
-        <p>Year</p><input type="number" name="year"/>
-        <p>Month</p><input type="number" name="month"/>
-        <p>Day</p><input type="number" name="day"/>
-        <p>Gender</p><input type="radio" name="gender"/>Male
-        <input type="radio"/>Female
-        <button type="button">search</button>
+        <form name="AkanNameForm" onsubmit="event.preventDefault()">
+        <p>Century</p><input type="number" id="century" value=""/>
+        <p>Year</p><input type="number" id="year" value=""/>
+        <p>Month</p><input type="number" id="month" value=""/>
+        <p>Day</p><input type="number" id="day" value=""/>
+        <p>Gender</p><input type="radio" name="gender" value="" />Male
+        <input type="radio" name="gender"/>Female
+        <input type="submit" onclick="giveAkanName()" id="submit" value="Submit">
     </form>
       </div>
     </div>
-    <script src="js/scripts.js"></script>
+    <script src="./js/main.js"></script>
     </body>
 </html>
