@@ -13,19 +13,33 @@ function giveAkanName (){
    var year =parseInt(document.getElementById("year").value);
    var gender = getGender();
 
-   var date =new Date(year +"/" + month + "/"+day);
+   var date =new Date(month +"/" + day + "/"+year);
 
    var dayBorn = date.getDay();
 
    var akanName;
+
+   if(year < 1900){
+        alert("Invalid year format, please input year in the format '19xx'.");
+        return false;
+   }
+   if(month > 12 || month < 1 ){
+       alert("Invalid month, please try again.");
+       return false;
+   }
+   if(day > 31 || day < 1){
+        alert("Invalid day, please try again.");
+        return false;
+   }else{
+    if(gender ==="male"){
+        akanName = male[dayBorn];
+    }
+    else{
+        akanName = female[dayBorn];
+    }
+   }
    
-   if(gender ==="male"){
-       akanName = male[dayBorn];
-   }
-   else{
-       
-       akanName = female[dayBorn];
-   }
+   
 
    alert("You were born on "+dayOfTheWeek[dayBorn]+ " and your Akan name is "+akanName);
 }
